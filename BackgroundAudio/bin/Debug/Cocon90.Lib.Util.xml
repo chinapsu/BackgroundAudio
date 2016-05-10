@@ -1,0 +1,1569 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cocon90.Lib.Util</name>
+    </assembly>
+    <members>
+        <member name="T:Cocon90.Lib.Util.Animate.AnimateType">
+            <summary>
+            动画类型
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Animate.AnimateType.AW_HOR_POSITIVE">
+            <summary>
+            从左到右展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Animate.AnimateType.AW_HOR_NEGATIVE">
+            <summary>
+            从右到左展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Animate.AnimateType.AW_VER_POSITIVE">
+            <summary>
+            从上到下展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Animate.AnimateType.AW_VER_NEGATIVE">
+            <summary>
+            从下到上展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Animate.AnimateType.AW_CENTER">
+            <summary>
+            从中间展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Animate.AnimateType.AW_HIDE">
+            <summary>
+            隐藏控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Animate.AnimateType.AW_ACTIVATE">
+            <summary>
+            激活控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Animate.AnimateType.AW_SLIDE">
+            <summary>
+            使用滑动样式展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Animate.AnimateType.AW_BLEND">
+            <summary>
+            使用谈出样式展示控件
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Animate.animateHelper">
+            <summary>
+            让控件执行动画的类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Animate.animateHelper.SetOpenAnimateMode(System.Windows.Forms.Control,Cocon90.Lib.Util.Animate.AnimateType)">
+            <summary>
+            执行控件的打开动画
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Animate.animateHelper.SetCloseAnimateMode(System.Windows.Forms.Control,Cocon90.Lib.Util.Animate.AnimateType)">
+            <summary>
+            执行控件的隐藏动画
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Config.configHelper">
+            <summary>
+            App.Config文件操作辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Config.configHelper.GetAppSettingValue(System.String,System.String,System.String)">
+            <summary>
+            获取指定路径为configFilePath的Config文件的AppSetting里面的指定键值对应的value值，如果configFilePath为NULL，则返回当前程序的Config文件对应的值。
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Controls.Alerter">
+            <summary>
+            表示一个消息提示控件
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.#ctor">
+            <summary>
+            表示一个消息提示控件
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.info(System.String,System.Boolean)">
+            <summary>
+            显示消息 自动在前面加上“消息提示：”
+            </summary>
+            <param name="info"></param>
+            <param name="isWarn"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.info(System.String,System.String,System.Boolean)">
+            <summary>
+            显示消息
+            </summary>
+            <param name="info"></param>
+            <param name="isWarn"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.infoControl(System.Windows.Forms.Control)">
+            <summary>
+            在指定控件显示指定信息！
+            </summary>
+            <param name="control"></param>
+            <param name="info"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.infoControl(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>
+            在指定控件显示指定信息！
+            </summary>
+            <param name="control"></param>
+            <param name="info"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.infoControl(System.Windows.Forms.Control,System.String)">
+            <summary>
+            在指定控件显示指定信息！
+            </summary>
+            <param name="control"></param>
+            <param name="info"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.infoControl(System.Windows.Forms.Control,System.String,System.Windows.Forms.Control)">
+            <summary>
+            在指定控件显示指定信息！
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.infoControl(System.Windows.Forms.Control,System.String,System.Boolean,System.Windows.Forms.Control)">
+            <summary>
+            在指定控件显示指定信息！
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.infoControl(System.Windows.Forms.Control,System.String,System.Boolean)">
+            <summary>
+            在指定控件显示指定信息！
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Controls.Alerter.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Alerter.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Controls.controlHelper">
+            <summary>
+            控件常用功能辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.controlHelper.BindFocusEventColor(System.Windows.Forms.Control,System.Drawing.Color)">
+            <summary>
+            给控件  绑定获取焦点时的变色事件
+            </summary>
+            <param name="control"></param>
+            <param name="alertColor"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.controlHelper.BindFocusChildrenEventColor(System.Windows.Forms.Control,System.Drawing.Color)">
+             <summary>
+            给控件的子控件 绑定获取焦点时的变色事件
+             </summary>
+             <param name="groupControl"></param>
+             <param name="alertColor"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.controlHelper.infoControl(System.Windows.Forms.Control,System.String)">
+            <summary>
+            在指定控件显示指定信息！内部调用了Alerter.infoControl()方法。
+            </summary>
+            <param name="control"></param>
+            <param name="info"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.controlHelper.BindMouseDragEvent(System.Windows.Forms.Control)">
+            <summary>
+            为控件绑带支持鼠标拖动事件。
+            </summary>
+            <param name="control"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.controlHelper.BindMouseDragEvent(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>
+            为控件绑带支持鼠标拖动事件。拖动control的时候，moveTarget会执行移动。
+            </summary>
+            <param name="control"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Controls.MemCombox">
+            <summary>
+            带记忆功能的Combox
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.MemCombox.#ctor">
+            <summary>
+             实例化一个带记忆功能的Combox
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Controls.MemCombox.aIniFileName">
+            <summary>
+            记忆文件的存放名称，系统将存放于程序目录下的"memory"文件夹下
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Controls.MemCombox.aMaxMemCount">
+            <summary>
+            最大记忆的条数
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Controls.Msg.Toast">
+            <summary>
+            平常消息提示
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Msg.Toast.Show(System.String,System.Int32)">
+            <summary>
+            消息显示 输入消息内容，显示时间，屏幕
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Msg.Toast.Show(System.String,System.Int32,System.Drawing.Color)">
+            <summary>
+            消息显示 输入消息内容，显示时间，屏幕
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Msg.Toast.Show(System.String)">
+            <summary>
+            消息显示 输入消息内容，屏幕
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Msg.Toast.Show(System.String,System.Drawing.Color)">
+            <summary>
+            消息显示 输入消息内容，屏幕
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Msg.Toast.Hide">
+            <summary>
+            关闭消息显示
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Controls.Pager">
+            <summary>
+            分页控件
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Pager.#ctor">
+            <summary>
+            构建一个分页组件
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Controls.Pager.getPageTotal">
+             <summary>
+            获取 页总数 分页后的页总数
+             </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Controls.Pager.TotalRecord">
+             <summary>
+            获取或设置 总记录数
+             </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Controls.Pager.PageSize">
+             <summary>
+            获取或设置 每页的数据量
+             </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Controls.Pager.PageNumber">
+             <summary>
+            获取或设置 当前页数 当前是第几页(初始为第1页)
+             </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Ency.md5Sign">
+            <summary>
+            MD5签名与校验，服务端要发给客户端一段重要信息前，先将信息进行签名，然后将签名后的结果一起发送。客户端接收到之后，进行校验。如果是原来的信息，则校验成功，返回True。如果信息被修改过，则校验失败，返回False
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Ency.md5Sign.Sign(System.String,System.String)">
+            <summary>
+            用MD5签名字符串
+            </summary>
+            <param name="sourceString">需要签名的字符串</param>
+            <param name="key">密钥</param>
+            <returns>签名结果</returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Ency.md5Sign.Verify(System.String,System.String,System.String)">
+            <summary>
+            进行校验。如果是原来的信息，则校验成功，返回True。如果信息被修改过，则校验失败，返回False
+            </summary>
+            <param name="sourceString">需要签名的字符串</param>
+            <param name="sign">签名结果</param>
+            <param name="key">密钥</param>
+            <returns>验证结果</returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Ency.decy">
+            <summary>
+            解密辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Ency.decy.des(System.String,System.String)">
+            <summary>
+            DES解密字符串
+            </summary>
+            <param name="decryptString">待解密的字符串</param>
+            <param name="decryptKey">解密密钥,要求为8位,和加密密钥相同</param>
+            <returns>解密成功返回解密后的字符串，失败返源串</returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Ency.decy.file(System.String,System.String,System.Boolean)">
+            <summary>
+            对整个文件进行解密
+            </summary>
+            <param name="sourceFilePath">解密的源加密文件路径</param>
+            <param name="targetFilePath">解密后存放到哪里</param>
+            <param name="isDeleteSoruceFile">解密之后是否删除源加密文件</param>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.GZip.gzipHelper">
+            <summary>
+            GZIP压缩辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.GZip.gzipHelper.StringCompress(System.String)">
+            <summary>
+            压缩字符串
+            </summary>
+            <param name="strUncompressed">未压缩的字符串</param>
+            <returns>压缩的字符串</returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.GZip.gzipHelper.StringDeCompress(System.String)">
+            <summary>
+            解压缩字符串
+            </summary>
+            <param name="strCompressed">压缩的字符串</param>
+            <returns>未压缩的字符串</returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.GZip.gzipHelper.CompressFile(System.String,System.String)">
+            <summary>
+            压缩文件
+            </summary>
+            <param name="iFile">压缩前文件路径</param>
+            <param name="oFile">压缩后文件路径</param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.GZip.gzipHelper.DecompressFile(System.String,System.String)">
+            <summary>
+            解压缩文件
+            </summary>
+            <param name="iFile">压缩前文件路径</param>
+            <param name="oFile">压缩后文件路径</param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Ini.IniHelper">
+            <summary>
+            INI文件操作工具
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Ini.IniHelper.Write(System.String,System.String,System.String)">
+            <summary>
+            写入ini文件
+            </summary>
+            <param name="section"></param>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Ini.IniHelper.Read(System.String,System.String)">
+            <summary>
+            从INI中读取
+            </summary>
+            <param name="section"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Log.Logger">
+            <summary>
+            日志记录工具
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Log.Logger.addToLog(System.String)">
+            <summary>
+            写到日志
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Log.Logger.addToLogHasBreak(System.String)">
+            <summary>
+            写到日志
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Log.Logger.addToLog(System.Exception)">
+            <summary>
+            将一个异常添加到日志记录
+            </summary>
+            <param name="exception"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Log.Logger.addToLog(System.Exception,System.String)">
+            <summary>
+            将一个异常添加到日志记录
+            </summary>
+            <param name="exception"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Mail.MailSender.sendMail(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="senderEmail">发送者的源邮箱 如：source@163.com</param>
+            <param name="senderEmailPass">发送者的源邮箱对应的密码 如：123456</param>
+            <param name="targetEmail">目标邮箱，发送给谁如abcdefg@163.com</param>
+            <param name="subject">邮件主题</param>
+            <param name="body">邮件正文</param>
+            <param name="isBodyHtml">邮件正文是否是Html内容</param>
+            <param name="enableSsl">是否使用SSL安全传输</param>
+            <returns>是否发送成功</returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Mail.MailSender.sendMail(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="senderEmail">发送者的源邮箱 如：source@163.com</param>
+            <param name="senderEmailPass">发送者的源邮箱对应的密码 如：123456</param>
+            <param name="targetEmail">目标邮箱，发送给谁如abcdefg@163.com</param>
+            <param name="subject">邮件主题</param>
+            <param name="body">邮件正文</param>
+            <param name="isBodyHtml">邮件正文是否是Html内容</param>
+            <param name="needSubjectAppendGuid">是否在主题后追加Guid，以防拦截，广告邮件推荐选True</param>
+            <param name="needBodyAppendGuid">是否在正文后追加Guid，以防拦截，广告邮件推荐选True</param>
+            <param name="enableSsl">是否使用SSL安全传输</param>
+            <returns>是否发送成功</returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Parse.parseHelper">
+            <summary>
+            数据类型安全转换
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toInt(System.String,System.Int32)">
+            <summary>
+            默认失败则返回-1
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toLong(System.String,System.Int64)">
+            <summary>
+            默认失败则返回-1
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toDouble(System.String,System.Double)">
+             <summary>
+            默认失败则返回-1.0000d
+             </summary>
+             <param name="num"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toFloat(System.String,System.Single)">
+            <summary>
+            默认失败则返回-1.000f
+            </summary>
+            <param name="floatString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toDateTime(System.String,System.Nullable{System.DateTime})">
+            <summary>
+            默认转换失败则返回Null
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toDateTimeLow(System.String)">
+            <summary>
+            默认转换失败时反回此该起的100年前
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toDateTimeHigh(System.String)">
+            <summary>
+             默认转换失败时反回此该起的100年后
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toBool(System.String)">
+            <summary>
+            对Bool类型进行转换，boolString为True的语句是："on","1","true","yes" 
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toFixLength(System.String,System.Int32)">
+            <summary>
+            将一个数字字符串，转为指定长度的数据字符串，比如：199转为4位长度为：0199,如果是12345转为2位，则为12
+            </summary>
+            <param name="num"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toFixLength(System.String,System.Int32,System.Char)">
+            <summary>
+            将一个字符串，转为指定长度的数据字符串，可以在前面加指定的字符
+            </summary>
+            <param name="num"></param>
+            <param name="length"></param>
+            <param name="padChar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.isNumber(System.String)">
+            <summary>
+            判断一个数字字符串是否是标准数字(包括正负int，double，decimal)。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toReplace(System.String,System.Object,System.String)">
+            <summary>
+            将itemModel中的属性值替换sourceString中出现的“${属性名(区分大小写)}”的字符串。替换完成后返回。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toColor(System.String)">
+            <summary>
+            将Html中的如#000这样的颜色转为Color对像。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.toColor(System.Drawing.Color)">
+            <summary>
+            将Color对像转为Html中的如#000这样的颜色。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Parse.parseHelper.numberToChinese(System.Int32)">
+            <summary>
+            将0-99999内的数字转为对应的汉字。
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Serialize.binarySerialize">
+            <summary>
+            二进制序列化辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Serialize.binarySerialize.Serialize(System.Object)">
+            <summary>
+            将对像序列化为byte数组
+            </summary>
+            <param name="modelObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Serialize.binarySerialize.SerializeToString(System.Object)">
+            <summary>
+            将对像序列化为Base64字符串
+            </summary>
+            <param name="modelObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Serialize.binarySerialize.Deserialize(System.Byte[])">
+            <summary>
+            将序列化后字节数组转为对像。
+            </summary>
+            <param name="serializeByte"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Serialize.binarySerialize.DeserializeFormString(System.String)">
+            <summary>
+            将序列化后的BASE64编码字符串转为对像
+            </summary>
+            <param name="serializeString"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Sorter.NumberStringSorter">
+            <summary>
+            排序器，可对如：高一年级、高二年级、高三年级 类似数字进行排序。
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Server.BaseIntervalServer">
+            <summary>
+            定时执行服务，需要子类实现 
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Server.IBaseServer">
+            <summary>
+            表示一个服务。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Server.IBaseServer.Start">
+            <summary>
+            启动服务
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Server.IBaseServer.Stop">
+            <summary>
+            停止服务
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Server.IBaseServer.IsRunning">
+            <summary>
+            获取或设置 服务是否正在运行。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Server.BaseIntervalServer.#ctor(System.Int64)">
+            <summary>
+            间隔多少秒执行一次
+            </summary>
+            <param name="intervalSeconds"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Server.BaseIntervalServer.Start">
+            <summary>
+            启动服务。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Server.BaseIntervalServer.DoSomeThing(System.Nullable{System.DateTime},System.Int64)">
+            <summary>
+            要不断调用的方法。
+            </summary>
+            <param name="startTime"></param>
+            <param name="count"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Server.BaseIntervalServer.Stop">
+            <summary>
+            停止服务
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Server.BaseIntervalServer.IntervalSeconds">
+            <summary>
+            获取或设置 间隔多称时间执行一次DoSomeThing方法。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Server.BaseIntervalServer.IsRunning">
+            <summary>
+            指示当前服务是否正在运行
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Server.BaseIntervalServer.StartTime">
+            <summary>
+            指示当前服务的开始执行日期。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Server.BaseIntervalServer.Count">
+            <summary>
+            指示当前服务调用了多少次DoSomeThing方法。
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Time.bgWorker">
+            <summary>
+            BackgroundWorker类的辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.bgWorker.runAsync(Cocon90.Lib.Util.Time.bgWorker.ArgumentDelegate,Cocon90.Lib.Util.Time.bgWorker.ArgumentDelegate)">
+            <summary>
+            执行新BackgroundWorker实体的RunWorkerAsync方法，doWork内的代码是在多线程中运行的。workCompleted中的代码将会在当前线程中运行。
+            </summary>
+            <param name="doWork">要使用背景线程做的事情，做完事后，把结果交给doWork的参数ArgumentEntry对像。</param>
+            <param name="workCompleted">把结果以ArgumentEntry对像为参数传出来。当前线程去执行workCompleted。</param>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Time.bgWorker.ArgumentEntry.ObjectResult">
+            <summary>
+            存放对像的类Object，不为NULL
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Time.bgWorker.ArgumentEntry.IntResult">
+            <summary>
+            存放对像的类Int 默认为0
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Time.bgWorker.ArgumentEntry.BoolResult">
+            <summary>
+            存放对像的类Bool 默认为False
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Time.bgWorker.ArgumentEntry.ObjectList">
+            <summary>
+            存放对像的集体，不为NULL。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Time.bgWorker.ArgumentEntry.IList">
+            <summary>
+            IList类型对像，注意，默认为NULL
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Time.intervalInvoker">
+            <summary>
+            用来重复执行某事
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.intervalInvoker.Invoke(System.Int32,System.Int32,System.Boolean,Cocon90.Lib.Util.Time.intervalInvoker.DoWork,System.Action)">
+            <summary>
+            重复每隔interval毫秒执行一次action委托，执行count次后，执行finishAction委托。isActionStart指定是否本方法刚调用就执行一次。
+            </summary>
+            <param name="interval"></param>
+            <param name="count"></param>
+            <param name="isActionStart"></param>
+            <param name="action"></param>
+            <param name="finishAction"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Time.intervalInvoker.DoWork">
+            <summary>
+            委托，表示要执行的事件。传出当前执行次数。
+            </summary>
+            <param name="currentCount"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Time.delayInvoker">
+            <summary>
+            延时辅助执行类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.delayInvoker.Invoke(System.Int32,System.Action)">
+            <summary>
+            延时执行指定毫秒，后执行某事。（同一线程内，异步执行）
+            </summary>
+            <param name="delayMillisecond"></param>
+            <param name="action"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Time.ThreadRepeater">
+            <summary>
+            使用多线程循环重复执行某事。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.ThreadRepeater.#ctor(System.Action,System.Int32)">
+            <summary>
+            构建一个自动多线程执行类，传入要执行的Action和间隔多长执行一次时间（秒）。
+            </summary>
+            <param name="action"></param>
+            <param name="intervalSecond"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.ThreadRepeater.Start">
+            <summary>
+            开始执行
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.ThreadRepeater.Stop">
+            <summary>
+            停止线程操作
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Utility.CacheHelper`1">
+            <summary>
+            缓存辅助 T为缓存数据的类型
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.CacheHelper`1.#ctor(System.Int32)">
+            <summary>
+            构建一个缓存辅助类
+            </summary>
+            <param name="intervalSeconds"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.CacheHelper`1.UpdateCache(System.String,`0)">
+            <summary>
+            更新数据到缓存,如果没有，则创建
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.CacheHelper`1.ReadCache(System.String,Cocon90.Lib.Util.Utility.CacheHelper{`0}.GenerateDataDelegate)">
+            <summary>
+            数据取缓存，如果有缓冲中有数据且时间小于IntervalSeconds则取缓冲，否则通过generateDataMethod的返回值取得数据并存起来。
+            </summary>
+            <param name="key"></param>
+            <param name="generateDataMethod"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Utility.CacheHelper`1.IntervalSeconds">
+            <summary>
+            传入间隔时间
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Utility.CacheHelper`1.CacheData">
+            <summary>
+            缓冲数据字典
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Utility.CacheHelper`1.GenerateDataDelegate">
+            <summary>
+            返回数据的委托
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Utility.CacheHelper`1.CacheModel`1">
+            <summary>
+            缓存数据实体
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Utility.CacheHelper`1.CacheModel`1.CacheId">
+            <summary>
+            缓存实体的唯一标记
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Utility.CacheHelper`1.CacheModel`1.Data">
+            <summary>
+            缓存的数据
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Utility.CacheHelper`1.CacheModel`1.UpdateTime">
+            <summary>
+            最近一次更新日期
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Utility.Splitter`1">
+            <summary>
+            通用分支器
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Utility.Splitter`1.Filter">
+            <summary>
+            分支选择过滤器
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Utility.Splitter`1.SplitterDictionary">
+            <summary>
+            分支器字典
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Utility.compareHelper">
+            <summary>
+            比较两具元素是的辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.compareHelper.arrayCompare(System.Array,System.Array)">
+            <summary>
+            比较两个数组的元素是否一一对应且相同。
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Utility.eventHelper">
+            <summary>
+            事件委托辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.eventHelper.notifyEvent(System.Action)">
+            <summary>
+            通知事件。传入Null时不通知。
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Utility.regexHelper">
+            <summary>
+            正则表达式辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.regexHelper.checkIP(System.String)">
+            <summary>
+            正规则试验IP地址
+            </summary>
+            <param name="IP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.regexHelper.isNullOrEmpty(System.String)">
+            <summary>
+            判断一个字符串是否是NULL或者是空格组成的字符串或者是空字符串。
+            </summary>
+            <param name="oldString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.regexHelper.trimEmpty(System.String)">
+            <summary>
+            返回一个字符串对像的字符形式。如传入NULL则返回空字符串。
+            </summary>
+            <param name="oldString"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Time.threadPoolHelper">
+            <summary>
+            线程池， 允许指定数量的线程在池中运行。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.threadPoolHelper.SetPoolMaxCount(System.Int32)">
+            <summary>
+            设置线程池最大请求数目
+            </summary>
+            <param name="maxThreadCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.threadPoolHelper.SetPoolMinCount(System.Int32)">
+            <summary>
+            设置线程池中工作的线程数
+            </summary>
+            <param name="minThreadCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.threadPoolHelper.GetPoolMaxCount">
+            <summary>
+            取得线程池最大请求数目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.threadPoolHelper.GetPoolMinCount">
+            <summary>
+            取得线程池中工作的线程数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.threadPoolHelper.GetAvailableCount">
+            <summary>
+            取得线程池中可用的线程数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.threadPoolHelper.DoInvoke(System.Threading.WaitCallback,System.Object)">
+            <summary>
+            将处理任务加入到线程池中执行。
+            </summary>
+            <param name="waitCallback"></param>
+            <param name="objArgs"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Time.sequenceInvoker">
+            <summary>
+            多任务连续执行类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.sequenceInvoker.InvokeSequence(System.Action,System.Action[])">
+            <summary>
+            同步执行action，并使用异步依次执行invkeFinish
+            </summary>
+            <param name="action"></param>
+            <param name="invokeFinish"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Time.sequenceInvoker.InvokeSequenceAsnync(System.Action,System.Action[])">
+            <summary>
+            异步执行action，并使用异步依次执行invkeFinish 
+            </summary>
+            <param name="action"></param>
+            <param name="invokeFinish"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Request.requestHelper">
+            <summary>
+            请求辅助功能
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Request.requestHelper.OpenRead(System.String,System.Net.OpenReadCompletedEventHandler)">
+            <summary>
+            开始向此URL发请求（自动将使用异常读取的方式），请求完成后调用readComplted（2参数）委托
+            </summary>
+            <param name="url"></param>
+            <param name="readComplted"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Request.requestHelper.PostFile(System.String,System.String,System.Net.UploadFileCompletedEventHandler)">
+            <summary>
+            异步上传文件到到指定的Url页面。其中filePath为本地文件全路径，uploadFinish表示发送成功时执行的委托
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Utility.cloneHelper`1">
+            <summary>
+            克隆辅助类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.cloneHelper`1.CloneModel(`0,System.Boolean)">
+            <summary>
+            克隆模型 取得新实例。
+            </summary>
+            <param name="sourceModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.cloneHelper`1.CloneToSonModel(System.Object,System.Boolean)">
+            <summary>
+            克隆到子类
+            </summary>
+            <param name="superModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.cloneHelper`1.CloneToSonModelList(System.Collections.IList,System.Boolean)">
+            <summary>
+            超类集合 克隆到 子类集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.cloneHelper`1.CloneToSuperModelList(System.Collections.IList,System.Boolean)">
+            <summary>
+            子类集合 克隆到 超类集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.cloneHelper`1.CloneToSuperModel(System.Object,System.Boolean)">
+            <summary>
+            克隆到超类
+            </summary>
+            <param name="sonModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.cloneHelper`1.Clone(`0,`0,System.Boolean)">
+            <summary>
+            将fromModel中的可读可写属性值赋给toModel，第三参isNullClone表示是否将fromModel中的Null一块克隆过去，如果值为null则不克隆该属性
+            </summary>
+            <param name="fromModel"></param>
+            <param name="toModel"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.cloneHelper`1.ClonePropertyToList(System.Collections.IList,System.String,Cocon90.Lib.Util.Utility.cloneHelper{`0}.HandlerPropertyDelegate)">
+            <summary>
+            将modelList中的实体的指定属性复制到T类型的List集体中并返回。
+            </summary>
+            <param name="modelList"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Utility.cloneHelper`1.HandlerPropertyDelegate">
+            <summary>
+            属性加工处理函数
+            </summary>
+            <param name="propertyValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.cloneHelper.Clone(System.Object,System.Object,System.Boolean)">
+            <summary>
+            将fromModel中的可读可写属性值赋给toModel，第三参isNullClone表示是否将fromModel中的Null一块克隆过去，如果值为null则不克隆该属性
+            </summary>
+            <param name="fromModel"></param>
+            <param name="toModel"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Ency.ency">
+            <summary>
+            加密辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Ency.ency.des(System.String,System.String)">
+            <summary>
+            DES加密字符串
+            </summary>
+            <param name="sourceString">待加密的字符串</param>
+            <param name="encyKeyUse8Letter">加密密钥,要求为8位</param>
+            <returns>加密成功返回加密后的字符串，失败返回源串</returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Ency.ency.file(System.String,System.String,System.Boolean)">
+            <summary>
+            对整个文件执行加密
+            </summary>
+            <param name="sourceFilePath">源文件路径</param>
+            <param name="targetFilePath">目标文件存放路径</param>
+            <param name="isDeleteSoruceFile">加密后删源文件否</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.uiHelper`1.getModelFromUI(System.Windows.Forms.Control)">
+            <summary>
+            将界面上controlPanel容器内的控件值付给T实体并反回。
+            1、如果实器内的控件为Label则自动跳过不处理。
+            2、如果容器内的控件的Name和实体中的属性值相同(不区分大小写)，则自动取其Text属性并赋给实体；
+            3、如果容器内的控件Name是以：实体属性名+"控件属性名"名称，则自动取期该属性然后赋给实体；如果是常见8种数据类型和DateTime类型，则进行数据转换后再赋值，如果转换失败，则使用Tag中的值，若Tag中的值也转换失败，则使用0或DateTime.Now做为默认值
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Utility.uiHelper`1.setModelToUI(System.Windows.Forms.Control,`0)">
+            <summary>
+            将model的属性值付给界面上controlPanel容器内的控件。
+            1、如果实器内的控件为Label则自动跳过不处理。
+            2、如果容器内的控件的Name和实体中的属性值相同(不区分大小写)，则自动给其Text属性赋；
+            3、如果容器内的控件Name是以：实体属性名+"控件属性名"名称，则自动赋值给该属性；如果控件的属性值是常见8种数据类型和DateTime类型，则进行数据转换后再赋值，如果转换失败，则使用Tag中的值，若Tag中的值也转换失败，则使用0或DateTime.Now做为默认值
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.API.apiHelper">
+            <summary>
+            Window常用Api收集辅助
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.API.apiHelper.GetWindowWallpaper">
+            <summary>
+            获取当前Windows的桌面壁纸
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.RunManager">
+             <summary>
+            开机自动运行的辅助类
+             </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.RunManager.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="executablePath">启动了应用程序的可执行文件的路径，包括可执行文件的名称</param>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Window.RunManager.ExecutablePath">
+            <summary>
+            获得或设置启动了应用程序的可执行文件的路径，包括可执行文件的名称
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Window.RunManager.RunAtStartUp">
+            <summary>
+            获取或设置程序是否开机启动
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.CameraClass">
+            <summary>
+            常规类摄像头辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.CameraClass.#ctor(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            初始化摄像头
+            </summary>
+            <param name="handle">控件的句柄</param>
+            <param name="left">开始显示的左边距</param>
+            <param name="top">开始显示的上边距</param>
+            <param name="width">显示的宽度</param>
+            <param name="height">显示的高度</param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.CameraClass.Start">
+            <summary>
+            开始显示视频
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.CameraClass.Stop">
+            <summary>
+            停止视频
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.CameraClass.SaveImage(System.String)">
+            <summary>
+            截取当前图片为Bmp格式
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.CameraClass.StartRecord(System.String)">
+            
+             录像
+            
+             要保存avi文件的路径
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.CameraClass.StopRecord">
+            
+             停止录像
+            
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Device.deviceInfoHelper">
+            <summary>
+            硬件信息获取辅助
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Device.deviceInfoHelper.GetBIOSSerialNumber">
+            <summary>
+            获取主板序列号
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Device.deviceInfoHelper.GetCPUSerialNumber">
+            <summary>
+            获取CPU序列号
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Device.deviceInfoHelper.GetHardDiskSerialNumber">
+            <summary>
+            获取硬盘序列号
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Device.deviceInfoHelper.GetNetCardMACAddress">
+            <summary>
+            获取网卡地址
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Hook.KeyboardApi">
+            <summary>
+            键盘操作辅助类（使用键盘钩子）
+            </summary>  
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Hook.KeyboardApi.#ctor">
+            <summary>
+            实倒化一个键盘钩子
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Hook.KeyboardApi.SetHook">
+            <summary>
+            安装钩子 返回是否安装成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Hook.KeyboardApi.UnHook">
+            <summary>
+            卸载钩子 返回是否卸载成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:Cocon90.Lib.Util.Window.Hook.KeyboardApi.KeyboardEvent">
+            <summary>
+            键盘事件
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Hook.KeyboardApi.KeyboardEventHandler">
+            <summary>
+            键盘事件的委托
+            </summary>
+            <param name="keyEvent"></param>
+            <param name="key"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Hook.KeyboardApi.KeyboardEvents">
+            <summary>
+            键盘按键动作枚举
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Hook.MouseApi">
+            <summary>
+            使用WindowAPI来操控鼠标，如果要移动鼠标，请使用WinForm中的Cursor.Position=new Point(X,Y);
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.memoryHelper">
+            <summary>
+            内存助手
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.memoryHelper.SetProcessWorkingSetSize(System.IntPtr,System.Int32,System.Int32)">
+            <summary>
+            设置操作系统实际划分给进程使用的内存容量,减少内存的使用率,在程序最小化时 立即释放内存
+            </summary>
+            <param name="process">当前运行程序的进程</param>
+            <param name="minSize">分配最小内存</param>
+            <param name="maxSize">分配最大内存</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.memoryHelper.FlushMemory">
+            <summary>
+            设置操作系统实际划分给进程使用的内存容量,减少内存的使用率,在程序最小化时 立即释放内存
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Regedit.regsvrHelper">
+            <summary>
+            dll或ocx注册工具
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Regedit.regsvrHelper.RegControl(System.Guid,System.String,System.String)">
+            <summary>
+            注册控件，clsidGuid:传入注册的CLSID编码(Guid值)用为组件的唯一编号。ocxNote:备注 。ocxFilePath文件路径 
+            </summary>
+            <param name="ocxFilePath"></param>
+            <returns>[0]--已经注册过;[1]--注册成功；[-1]--注册失败；[-2]--预注册的.OCX文件不存在</returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Regedit.regsvrHelper.RunCmd(System.String)">
+            <summary>
+            Process类调用外部程序regsvr32.exe程序
+            加入参数 "/c " + 要执行的命令来执行一个dos命令
+            （/c代表执行参数指定的命令后关闭cmd.exe /k参数则不关闭cmd.exe）
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Regedit.regsvrHelper.RegResult">
+            <summary>
+            注册结果
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Regedit.regsvrHelper.RegResult.HasReg">
+            <summary>
+            0 已经注册
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Regedit.regsvrHelper.RegResult.RegSuccess">
+            <summary>
+            1 注册成功
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Regedit.regsvrHelper.RegResult.RegFail">
+            <summary>
+            2 注册失败
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Regedit.regsvrHelper.RegResult.RegFileNotExist">
+            <summary>
+            预注册的.OCX或dll文件不存在
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Regedit.regeditHelper">
+            <summary>
+            注册表 辅助操作类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Regedit.regeditHelper.GetLocalMachineValueByPath(System.String,System.String,System.String)">
+            <summary>
+            取得路径path下（如：Software\\MyCompany\\MySoft ）指定Key 的字符串值。没有时，返回DefaultValue
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Regedit.regeditHelper.SetLocalMachineValueByPath(System.String,System.String,System.String)">
+            <summary>
+            设置路径path下（如：Software\\MyCompany\\MySoft ）指定Key 的字符串值 ，成功则返回True，如果有异常，则返回False
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceControl">
+            <summary>
+            服务控制类，依靠ServiceHelper类，进行安装和卸载服务
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceControl.#ctor(System.String,System.String,System.String)">
+            <summary>
+            服务名称，服务主程序全路径，服务描述
+            </summary>
+            <param name="serviceName"></param>
+            <param name="servicePath"></param>
+            <param name="serviceDiscription"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceControl.#ctor(System.String,System.String)">
+            <summary>
+            服务名称，服务主程序全路径
+            </summary>
+            <param name="serviceName"></param>
+            <param name="servicePath"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceControl.Stop">
+            <summary>
+            停止并卸载
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceControl.Start">
+            <summary>
+            安装并启动
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceControl.IntelligenceRun">
+            <summary>
+            如果未安装，则安装，如果未运行，则安装并启动，操作成功则返回True，失败则返回False。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceNotExistException">
+            <summary>
+            服务不存在异常
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceStartType">
+            <summary>
+            服务启动类型
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceAccount">
+            <summary>
+            服务运行帐户
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceHelper">
+            <summary>
+            Windows 服务辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.Install(System.String,System.String,System.String,System.String,Cocon90.Lib.Util.Window.Service.ServiceStartType,Cocon90.Lib.Util.Window.Service.ServiceAccount,System.String[])">
+            <summary>
+            安装服务
+            </summary>
+            <param name="serviceName">服务名</param>
+            <param name="displayName">友好名称</param>
+            <param name="binaryFilePath">映像文件路径，可带参数</param>
+            <param name="description">服务描述</param>
+            <param name="startType">启动类型</param>
+            <param name="account">启动账户</param>
+            <param name="dependencies">依赖服务</param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.Uninstall(System.String)">
+            <summary>
+            卸载服务
+            </summary>
+            <param name="serviceName">服务名</param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.GetServiceAccountName(Cocon90.Lib.Util.Window.Service.ServiceAccount)">
+            <summary>
+            转换帐户枚举为有效参数
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.ProcessDependencies(System.String[])">
+            <summary>
+            处理依赖服务参数
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.OpenSCManager">
+            <summary>
+            打开服务管理器
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.OpenService(System.String,System.IntPtr@)">
+            <summary>
+            打开服务
+            </summary>
+            <param name="serviceName">服务名称</param>
+            <param name="scmHandle">服务管理器句柄。供调用者释放</param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.StopService(System.IntPtr)">
+            <summary>
+            停止服务
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.EnumDependentServices(System.IntPtr,Cocon90.Lib.Util.Window.Service.ServiceHelper.EnumServiceState)">
+            <summary>
+            遍历从属服务
+            </summary>
+            <param name="serviceHandle"></param>
+            <param name="state">选择性遍历（活动、非活动、全部）</param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.GetServiceStatus(System.IntPtr)">
+            <summary>
+            获取服务状态
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Service.ServiceHelper.WaitForStatus(System.IntPtr,Cocon90.Lib.Util.Window.Service.ServiceHelper.ServiceState,System.TimeSpan)">
+            <summary>
+            等候服务至目标状态
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class">
+            <summary>
+            Win32 API相关
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class.SC_MANAGER_ALL_ACCESS">
+            <summary>
+            打开服务管理器时请求的权限：全部
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class.SERVICE_WIN32_OWN_PROCESS">
+            <summary>
+            服务类型：自有进程类服务
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class.SERVICE_ALL_ACCESS">
+            <summary>
+            打开服务时请求的权限：全部
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class.SERVICE_STOP">
+            <summary>
+            打开服务时请求的权限：停止
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class.SERVICE_CONTROL_STOP">
+            <summary>
+            服务操作标记：停止
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class.SERVICE_ERROR_NORMAL">
+            <summary>
+            服务出错行为标记
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class.SERVICE_STATUS">
+            <summary>
+            服务状态结构体
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class.SERVICE_DESCRIPTION">
+            <summary>
+            服务描述结构体
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceHelper.Win32Class.ENUM_SERVICE_STATUS">
+            <summary>
+            服务状态结构体。遍历API会用到
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceHelper.EnumServiceState">
+            <summary>
+            服务状态枚举。用于遍历从属服务API
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Service.ServiceHelper.ServiceState">
+            <summary>
+            服务状态
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Usb.UsbDeviceListener">
+            <summary>
+            USB存储设备监听类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Usb.UsbDeviceListener.#ctor">
+            <summary>
+            实例化一个存储设备监听类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Usb.UsbDeviceListener.PopupDevice(System.String)">
+            <summary>
+            弹出驱动器，指定驱动器的盘符，如H盘，就输入"H" 返回是否弹出成功
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Usb.UsbDeviceListener.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            在Form对像的protected override void WndProc(ref Message m)方法中，加入的方法，用来起到检测USB作用。
+            </summary>
+            <param name="m"></param>
+        </member>
+        <member name="E:Cocon90.Lib.Util.Window.Usb.UsbDeviceListener.OnUsbRemovableStatusChanged">
+            <summary>
+            事件 USB可移动存储设备改变时发生
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Usb.UsbDeviceListener.UsbRemovableStatusChanged">
+            <summary>
+            USB可移动存储设备改变委托
+            </summary>
+            <param name="status"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Usb.USBSerialNumber">
+            <summary>
+            取得驱动器硬件序列号信息的类。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Usb.USBSerialNumber.getSerialNumberFromDriveLetter(System.String)">
+            <summary>
+            获取驱动器硬件序列号，转入盘符，比如I:\盘就传"I"
+            </summary>
+            <param name="driveLetter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cocon90.Lib.Util.Window.Usb.DeviceSteck">
+            <summary>
+            用来记忆插入的设备和拔出的设备的一个类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Usb.DeviceSteck.Add">
+            <summary>
+            插入设备时调用此方法。
+            </summary>
+            <param name="usb"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Usb.DeviceSteck.Remove">
+            <summary>
+             拔出设备时调用此方法，可以返回被拔掉的设备的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Usb.DeviceSteck.DeleteDeviceFormList(Cocon90.Lib.Util.Window.Usb.RemovableStatusModel)">
+            <summary>
+            从列表中移除
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.Window.Usb.DeviceSteck.GetSerialNumberByDeviceName(System.String)">
+            <summary>
+            通过名称，取得设备信息。
+            </summary>
+            <param name="serialNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Window.Usb.RemovableStatusModel.IsConnectionToPc">
+            <summary>
+            True:连接到PC，False:从PC上弹出。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Window.Usb.RemovableStatusModel.DeviceInfo">
+            <summary>
+            驱动器设备信息
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Window.Usb.RemovableStatusModel.DeviceName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Window.Usb.RemovableStatusModel.DateTime">
+            <summary>
+            设备状态发现时间
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Util.Window.Usb.RemovableStatusModel.SerialNumber">
+            <summary>
+            设备序列号
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Util.WndProc.wndProcHelper">
+            <summary>
+             在Form对像的protected override void WndProc(ref Message m)方法中，加入的方法，用来起到某些特殊作用。
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Util.WndProc.wndProcHelper.SetFormMinimizedOnClose(System.Windows.Forms.Form,System.Windows.Forms.Message@,System.Action)">
+            <summary>
+            当用户点击了关闭窗口时，自动执行最小化操作。除非结束进程才可关闭。
+            </summary>
+            <param name="from">要最小化的窗口</param>
+            <param name="m">传入override void WndProc(ref Message m)中的m</param>
+            <param name="action">最小化后要执行的其它操作。</param>
+        </member>
+        <member name="M:Cocon90.Lib.Util.WndProc.wndProcHelper.SetFormHideOnMinimizedOrClose(System.Windows.Forms.Form,System.Windows.Forms.Message@,System.Action)">
+            <summary>
+            当用户点击了关闭窗口或最小化窗口时，自动执行窗体的Hide方法。除非结束进程才可关闭
+            </summary>
+            <param name="from">要Hide的窗口</param>
+            <param name="m">传入override void WndProc(ref Message m)中的m</param>
+            <param name="action">最小化后要执行的其它操作。</param>
+        </member>
+    </members>
+</doc>

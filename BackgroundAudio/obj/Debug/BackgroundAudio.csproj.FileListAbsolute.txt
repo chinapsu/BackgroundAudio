@@ -1,0 +1,10 @@
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\bin\Debug\BackgroundAudio.exe
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\bin\Debug\BackgroundAudio.pdb
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\bin\Debug\Cocon90.Lib.Util.dll
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\bin\Debug\NAudio.dll
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\bin\Debug\Cocon90.Lib.Util.pdb
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\bin\Debug\Cocon90.Lib.Util.xml
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\obj\Debug\BackgroundAudio.csprojResolveAssemblyReference.cache
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\obj\Debug\BackgroundAudio.exe
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\obj\Debug\BackgroundAudio.pdb
+D:\我的文档\Project\BackgroundAudio\BackgroundAudio\bin\Debug\NSpeex.dll
